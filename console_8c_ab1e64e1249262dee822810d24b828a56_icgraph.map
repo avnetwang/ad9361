@@ -1,0 +1,4 @@
+<map id="uart_read_char" name="uart_read_char">
+<area shape="rect" id="node3" href="$console_8h.html#ae877f3d0ecbe2d67a9144749f484d399" title="Reads one command from console." alt="" coords="164,5,319,35"/>
+<area shape="rect" id="node5" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="368,5,419,35"/>
+</map>

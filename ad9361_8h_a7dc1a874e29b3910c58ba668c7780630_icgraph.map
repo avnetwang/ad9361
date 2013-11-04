@@ -1,0 +1,37 @@
+<map id="ad9361_to_clk" name="ad9361_to_clk">
+<area shape="rect" id="node3" href="$ad9361_8h.html#a39072de34f5d7c9af549466153c49f9b" title="ad9361_setup" alt="" coords="1660,361,1761,390"/>
+<area shape="rect" id="node9" href="$ad9361_8h.html#a60eb5fc54c32389bf10f4da1c9cdc184" title="ad9361_rfpll_recalc_rate" alt="" coords="160,605,323,634"/>
+<area shape="rect" id="node53" href="$ad9361__api_8h.html#ae87846c50e314926a95aa039867a5b4e" title="ad9361_set_rx_lo_freq" alt="" coords="1393,800,1545,829"/>
+<area shape="rect" id="node55" href="$ad9361__api_8h.html#a078c1f1351b6e7b8c3f0209e7fe9559b" title="ad9361_set_tx_lo_freq" alt="" coords="1393,901,1545,930"/>
+<area shape="rect" id="node84" href="$ad9361_8h.html#a1943ef3caf4c31be2c9287a63d128f53" title="ad9361_rfpll_round_rate" alt="" coords="161,876,321,905"/>
+<area shape="rect" id="node5" href="$ad9361__api_8h.html#af1e53f0a822ba45519da9abfa3bcaa7c" title="ad9361_init" alt="" coords="1897,94,1985,124"/>
+<area shape="rect" id="node7" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="2075,94,2125,124"/>
+<area shape="rect" id="node11" href="$ad9361_8c.html#ad80a956d8916914401ec3edc44fa9734" title="ad9361_clk_register" alt="" coords="371,194,509,224"/>
+<area shape="rect" id="node16" href="$util_8h.html#a3d47117304cb10a599d81f7ec70eec16" title="clk_get_rate" alt="" coords="393,437,487,466"/>
+<area shape="rect" id="node37" href="$util_8h.html#a711b9cd88c9121677adf67ab964b93ec" title="clk_set_rate" alt="" coords="1213,776,1307,805"/>
+<area shape="rect" id="node13" href="$ad9361_8h.html#ad1930dc0f083df7b093544a8c3b965b6" title="register_clocks" alt="" coords="1205,28,1315,57"/>
+<area shape="rect" id="node18" href="$ad9361_8c.html#a8bfc641c62d87c60cf9096056462c3ba" title="ad9361_get_full_table_gain" alt="" coords="565,620,744,649"/>
+<area shape="rect" id="node24" href="$ad9361_8c.html#a03bb23268c752818a8542bd844cb03c2" title="set_full_table_gain" alt="" coords="589,673,720,702"/>
+<area shape="rect" id="node30" href="$ad9361_8c.html#a174353deff39c816c22af935d06d57ca" title="ad9361_tx_quad_calib" alt="" coords="580,182,729,212"/>
+<area shape="rect" id="node33" href="$ad9361_8c.html#a39b4414c5958dfcf21fdc415f7ad9fbc" title="ad9361_do_calib_run" alt="" coords="800,566,944,596"/>
+<area shape="rect" id="node42" href="$ad9361_8h.html#a976e9fc6036098a37a93f5f01fd20a8f" title="ad9361_validate_enable_fir" alt="" coords="1621,240,1800,269"/>
+<area shape="rect" id="node57" href="$ad9361_8h.html#a6addad978a0e229dd8c1dd15b0c02b5e" title="ad9361_update_rf_bandwidth" alt="" coords="1375,138,1564,168"/>
+<area shape="rect" id="node66" href="$ad9361_8c.html#a46be783f965c7a44b2a2515890f479f3" title="ad9361_rssi_setup" alt="" coords="1195,412,1325,441"/>
+<area shape="rect" id="node69" href="$ad9361_8c.html#adbae49a255a2cf847ad4367e24395c95" title="ad9361_get_trx_clock\l_chain" alt="" coords="580,235,729,282"/>
+<area shape="rect" id="node75" href="$ad9361__api_8h.html#acceb7197cb41259eaa9c6a8a37f3602d" title="ad9361_get_rx_sampling_freq" alt="" coords="557,305,752,334"/>
+<area shape="rect" id="node77" href="$ad9361__api_8h.html#a87c44a971bec14ca54e1455f1a967c45" title="ad9361_get_rx_lo_freq" alt="" coords="579,358,731,388"/>
+<area shape="rect" id="node79" href="$ad9361__api_8h.html#a12e74ffd5cfa1084ee02e65b1b160456" title="ad9361_get_tx_sampling_freq" alt="" coords="557,462,752,492"/>
+<area shape="rect" id="node81" href="$ad9361__api_8h.html#abf497bac9f654b8dec91a872f52fd417" title="ad9361_get_tx_lo_freq" alt="" coords="579,516,731,545"/>
+<area shape="rect" id="node20" href="$ad9361_8h.html#ac190fe4a1f9230ed7202bc09f3d22b8f" title="ad9361_get_rx_gain" alt="" coords="803,620,941,649"/>
+<area shape="rect" id="node22" href="$ad9361__api_8h.html#a0fe840db0ff2f3c412736b525fb2fe44" title="ad9361_get_rx_rf_gain" alt="" coords="993,620,1145,649"/>
+<area shape="rect" id="node26" href="$ad9361_8h.html#ae485da45f31ddb8458120637e3478a46" title="ad9361_set_rx_gain" alt="" coords="803,673,941,702"/>
+<area shape="rect" id="node28" href="$ad9361__api_8h.html#aa803c0a592df3b309501b663c0e58ae0" title="ad9361_set_rx_rf_gain" alt="" coords="993,673,1145,702"/>
+<area shape="rect" id="node35" href="$ad9361_8h.html#ad6665a42027a2244fa28cde9f55a5fe3" title="ad9361_rfpll_set_rate" alt="" coords="996,566,1143,596"/>
+<area shape="rect" id="node39" href="$ad9361_8h.html#ae6c7a4582db7fa277224bef382c0c161" title="ad9361_set_trx_clock\l_chain" alt="" coords="1395,242,1544,288"/>
+<area shape="rect" id="node48" href="$ad9361__api_8h.html#ae521900c85ffd277805765cdf0cdba86" title="ad9361_set_rx_sampling_freq" alt="" coords="1613,293,1808,322"/>
+<area shape="rect" id="node50" href="$ad9361__api_8h.html#a3200b2190ba3aed6eb6e60d4bd5cd400" title="ad9361_set_tx_sampling_freq" alt="" coords="1613,186,1808,216"/>
+<area shape="rect" id="node44" href="$ad9361__api_8h.html#aaed1f486b1c49cb1ffd3d4d47daf8e8a" title="ad9361_set_rx_fir_en_dis" alt="" coords="1856,266,2027,296"/>
+<area shape="rect" id="node46" href="$ad9361__api_8h.html#a33f7d58a6163e28a33c22d8aefb3ae6f" title="ad9361_set_tx_fir_en_dis" alt="" coords="1856,213,2027,242"/>
+<area shape="rect" id="node60" href="$ad9361__api_8h.html#afd37ef2790f91a1ef7bd7fa356a0af5d" title="ad9361_set_rx_rf_bandwidth" alt="" coords="1617,80,1804,109"/>
+<area shape="rect" id="node63" href="$ad9361__api_8h.html#a3120689dd9f2c08df911807855a081cc" title="ad9361_set_tx_rf_bandwidth" alt="" coords="1617,133,1804,162"/>
+</map>

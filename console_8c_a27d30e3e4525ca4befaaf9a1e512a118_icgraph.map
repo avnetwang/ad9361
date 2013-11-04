@@ -1,0 +1,4 @@
+<map id="uart_write_string" name="uart_write_string">
+<area shape="rect" id="node3" href="$console_8h.html#a6c4e260c9a4cc76be56fd1d01387f433" title="Prints formatted data to console." alt="" coords="173,5,272,35"/>
+<area shape="rect" id="node5" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="320,5,371,35"/>
+</map>

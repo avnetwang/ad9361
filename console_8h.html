@@ -36,7 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -67,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,7 +92,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Header file of Console Driver.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="console_8h__dep__incl.png" border="0" usemap="#sw_2console_8hdep" alt=""/></div>
+<map name="sw_2console_8hdep" id="sw_2console_8hdep">
+<area shape="rect" id="node3" href="command_8c.html" title="Implementation of AD9361 Command Driver." alt="" coords="5,83,115,112"/><area shape="rect" id="node5" href="console_8c.html" title="Implementation of Console Driver." alt="" coords="139,83,237,112"/><area shape="rect" id="node7" href="main_8c.html" title="Implementation of Main Function." alt="" coords="261,83,344,112"/></map>
+</div>
+</div>
 <p><a href="console_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
@@ -180,6 +187,15 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>cmd_type - Type of the command. Example: UNKNOWN_CMD - Commands don't match. DO_CMD - Do command (!). READ_CMD - Read command (?). WRITE_CMD - Write command (=). </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="console_8h_a6f4cc308f9d618a96d571497b96b8cd7_icgraph.png" border="0" usemap="#console_8h_a6f4cc308f9d618a96d571497b96b8cd7_icgraph" alt=""/></div>
+<map name="console_8h_a6f4cc308f9d618a96d571497b96b8cd7_icgraph" id="console_8h_a6f4cc308f9d618a96d571497b96b8cd7_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="235,5,285,35"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ae877f3d0ecbe2d67a9144749f484d399"></a>
@@ -204,6 +220,15 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="console_8h_ae877f3d0ecbe2d67a9144749f484d399_icgraph.png" border="0" usemap="#console_8h_ae877f3d0ecbe2d67a9144749f484d399_icgraph" alt=""/></div>
+<map name="console_8h_ae877f3d0ecbe2d67a9144749f484d399_icgraph" id="console_8h_ae877f3d0ecbe2d67a9144749f484d399_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="211,5,261,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -265,12 +290,21 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="console_8h_a6c4e260c9a4cc76be56fd1d01387f433_icgraph.png" border="0" usemap="#console_8h_a6c4e260c9a4cc76be56fd1d01387f433_icgraph" alt=""/></div>
+<map name="console_8h_a6c4e260c9a4cc76be56fd1d01387f433_icgraph" id="console_8h_a6c4e260c9a4cc76be56fd1d01387f433_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="152,5,203,35"/></map>
+</div>
+</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 4 2013 11:04:38 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 4 2013 12:05:00 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,0 +1,14 @@
+<map id="refclk_scale" name="refclk_scale">
+<area shape="rect" id="node2" href="$structad9361__rf__phy.html" title="ad9361_rf_phy" alt="" coords="727,309,833,339"/>
+<area shape="rect" id="node4" href="$structad9361__phy__platform__data.html" title="ad9361_phy_platform_data" alt="" coords="321,213,500,243"/>
+<area shape="rect" id="node6" href="$structrssi__control.html" title="rssi_control" alt="" coords="5,101,93,131"/>
+<area shape="rect" id="node8" href="$structelna__control.html" title="elna_control" alt="" coords="117,101,208,131"/>
+<area shape="rect" id="node10" href="$structauxadc__control.html" title="auxadc_control" alt="" coords="232,101,341,131"/>
+<area shape="rect" id="node12" href="$structport__control.html" title="port_control" alt="" coords="365,101,456,131"/>
+<area shape="rect" id="node14" href="$structctrl__outs__control.html" title="ctrl_outs_control" alt="" coords="480,101,597,131"/>
+<area shape="rect" id="node16" href="$structgain__control.html" title="gain_control" alt="" coords="621,101,712,131"/>
+<area shape="rect" id="node19" href="$structrx__gain__info.html" title="rx_gain_info" alt="" coords="621,213,712,243"/>
+<area shape="rect" id="node21" href="$structclk__onecell__data.html" title="clk_onecell_data" alt="" coords="805,157,923,187"/>
+<area shape="rect" id="node23" href="$structclk.html" title="clk" alt="" coords="845,5,883,35"/>
+<area shape="rect" id="node26" href="$structclk__hw.html" title="clk_hw" alt="" coords="912,101,973,131"/>
+</map>

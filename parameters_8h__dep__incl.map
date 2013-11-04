@@ -1,0 +1,5 @@
+<map id="sw/parameters.h" name="sw/parameters.h">
+<area shape="rect" id="node3" href="$adc__core_8c.html" title="Implementation of ADC Core Driver." alt="" coords="5,83,112,112"/>
+<area shape="rect" id="node5" href="$dac__core_8c.html" title="Implementation of DAC Core Driver." alt="" coords="136,83,243,112"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Implementation of Main Function." alt="" coords="267,83,349,112"/>
+</map>

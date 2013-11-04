@@ -36,7 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -67,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,6 +93,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ad9361_8h_source.html">ad9361.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ad9361__api_8h_source.html">ad9361_api.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for ad9361_api.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="ad9361__api_8c__incl.png" border="0" usemap="#sw_2ad9361__api_8c" alt=""/></div>
+<map name="sw_2ad9361__api_8c" id="sw_2ad9361__api_8c">
+<area shape="rect" id="node3" href="ad9361_8h.html" title="Header file of AD9361 Driver." alt="" coords="5,237,80,267"/><area shape="rect" id="node11" href="ad9361__api_8h.html" title="Header file of AD9361 API Driver." alt="" coords="160,83,259,112"/><area shape="rect" id="node5" href="common_8h.html" title="Header file of Common Driver." alt="" coords="37,315,120,344"/><area shape="rect" id="node13" href="util_8h.html" title="Header file of Util driver." alt="" coords="212,160,263,189"/></map>
+</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -653,6 +660,15 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A structure that contains the AD9361 current state in case of success, negative error code otherwise. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="ad9361__api_8c_af1e53f0a822ba45519da9abfa3bcaa7c_icgraph.png" border="0" usemap="#ad9361__api_8c_af1e53f0a822ba45519da9abfa3bcaa7c_icgraph" alt=""/></div>
+<map name="ad9361__api_8c_af1e53f0a822ba45519da9abfa3bcaa7c_icgraph" id="ad9361__api_8c_af1e53f0a822ba45519da9abfa3bcaa7c_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="141,5,192,35"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="aa8d78bac73de9396e10d264aa6d459ac"></a>
@@ -722,6 +738,15 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="ad9361__api_8c_ab66a466adea8d908c90c694858c27de9_icgraph.png" border="0" usemap="#ad9361__api_8c_ab66a466adea8d908c90c694858c27de9_icgraph" alt=""/></div>
+<map name="ad9361__api_8c_ab66a466adea8d908c90c694858c27de9_icgraph" id="ad9361__api_8c_ab66a466adea8d908c90c694858c27de9_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="221,5,272,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1024,6 +1049,15 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="ad9361__api_8c_a4ad67e473dfdb2aa29cf4338f003b6c0_icgraph.png" border="0" usemap="#ad9361__api_8c_a4ad67e473dfdb2aa29cf4338f003b6c0_icgraph" alt=""/></div>
+<map name="ad9361__api_8c_a4ad67e473dfdb2aa29cf4338f003b6c0_icgraph" id="ad9361__api_8c_a4ad67e473dfdb2aa29cf4338f003b6c0_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="221,5,272,35"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a33f7d58a6163e28a33c22d8aefb3ae6f"></a>
@@ -1169,7 +1203,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 4 2013 11:04:38 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 4 2013 12:04:59 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,0 +1,11 @@
+<map id="sw/main.c" name="sw/main.c">
+<area shape="rect" id="node5" href="$parameters_8h.html" title="Parameters Definitions." alt="" coords="117,83,216,112"/>
+<area shape="rect" id="node9" href="$ad9361__api_8h.html" title="Header file of AD9361 API Driver." alt="" coords="240,83,339,112"/>
+<area shape="rect" id="node33" href="$adc__core_8h.html" title="Header file of ADC Core Driver." alt="" coords="363,83,448,112"/>
+<area shape="rect" id="node35" href="$dac__core_8h.html" title="Header file of DAC Core Driver." alt="" coords="472,83,557,112"/>
+<area shape="rect" id="node37" href="$console_8h.html" title="Header file of Console Driver." alt="" coords="581,83,659,112"/>
+<area shape="rect" id="node39" href="$command_8h.html" title="Header file of AD9361 Command Driver." alt="" coords="683,83,773,112"/>
+<area shape="rect" id="node11" href="$util_8h.html" title="Header file of Util driver." alt="" coords="264,160,315,189"/>
+<area shape="rect" id="node23" href="$common_8h.html" title="Header file of Common Driver." alt="" coords="361,315,444,344"/>
+<area shape="rect" id="node30" href="$ad9361_8h.html" title="Header file of AD9361 Driver." alt="" coords="547,237,621,267"/>
+</map>

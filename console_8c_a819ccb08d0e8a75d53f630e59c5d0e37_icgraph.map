@@ -1,0 +1,5 @@
+<map id="uart_write_char" name="uart_write_char">
+<area shape="rect" id="node3" href="$console_8c.html#a27d30e3e4525ca4befaaf9a1e512a118" title="Writes one character string to UART." alt="" coords="167,5,284,35"/>
+<area shape="rect" id="node5" href="$console_8h.html#a6c4e260c9a4cc76be56fd1d01387f433" title="Prints formatted data to console." alt="" coords="333,32,432,61"/>
+<area shape="rect" id="node7" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="480,32,531,61"/>
+</map>
