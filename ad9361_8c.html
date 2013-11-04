@@ -107,45 +107,113 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SIZE_FULL_TABLE</b>&#160;&#160;&#160;77</td></tr>
 <tr class="memitem:ada430b0b90f561c338177ff0caaf4c0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada430b0b90f561c338177ff0caaf4c0c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SIZE_SPLIT_TABLE</b>&#160;&#160;&#160;41</td></tr>
-<tr class="memitem:a402aef8c21061f9c2be7db2e82cee115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a402aef8c21061f9c2be7db2e82cee115">ad9361_spi_readf</a>(reg, mask)&#160;&#160;&#160;__ad9361_spi_readf(reg, mask, __ffs(mask))</td></tr>
-<tr class="memitem:a4f94794d901a011e63b626730352a9fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a4f94794d901a011e63b626730352a9fe">ad9361_spi_writef</a>(reg, mask, val)&#160;&#160;&#160;__ad9361_spi_writef(reg, mask, __ffs(mask), val)</td></tr>
+<tr class="memitem:a402aef8c21061f9c2be7db2e82cee115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a402aef8c21061f9c2be7db2e82cee115">ad9361_spi_readf</a>(reg, mask)&#160;&#160;&#160;<a class="el" href="ad9361_8c.html#a8312b0a524a567c2c745eb6b2e811960">__ad9361_spi_readf</a>(reg, mask, __ffs(mask))</td></tr>
+<tr class="memitem:a4f94794d901a011e63b626730352a9fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a4f94794d901a011e63b626730352a9fe">ad9361_spi_writef</a>(reg, mask, val)&#160;&#160;&#160;<a class="el" href="ad9361_8c.html#a7462764aba2c3b1a0145b63526ebdb83">__ad9361_spi_writef</a>(reg, mask, __ffs(mask), val)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad1112a7fa6342d2d43a2f4543375cabc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ad1112a7fa6342d2d43a2f4543375cabc">ad9361_reset</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:ae2e55a8ec344dc2f0f0d076365d0e675"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ae2e55a8ec344dc2f0f0d076365d0e675">ad9361_spi_readm</a> (u32 reg, u8 *rbuf, u32 num)</td></tr>
 <tr class="memitem:a7a458d24c508faa07d1ec0223f5e26f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a7a458d24c508faa07d1ec0223f5e26f5">ad9361_spi_read</a> (u32 reg)</td></tr>
+<tr class="memitem:a8312b0a524a567c2c745eb6b2e811960"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a8312b0a524a567c2c745eb6b2e811960">__ad9361_spi_readf</a> (u32 reg, u32 mask, u32 offset)</td></tr>
 <tr class="memitem:aa9939f6a16f9b3621119127008ec29e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aa9939f6a16f9b3621119127008ec29e5">ad9361_spi_write</a> (u32 reg, u32 val)</td></tr>
+<tr class="memitem:a7462764aba2c3b1a0145b63526ebdb83"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a7462764aba2c3b1a0145b63526ebdb83">__ad9361_spi_writef</a> (u32 reg, u32 mask, u32 offset, u32 val)</td></tr>
+<tr class="memitem:a14791701108d852029a80ea56b30429a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a14791701108d852029a80ea56b30429a">ad9361_spi_writem</a> (u32 reg, u8 *tbuf, u32 num)</td></tr>
+<tr class="memitem:a390ca0d74a254ee0d81fcbd571121671"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a390ca0d74a254ee0d81fcbd571121671">ad9361_check_cal_done</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 reg, u32 mask, bool done_state)</td></tr>
+<tr class="memitem:afa4ca11029e720ec7e164af5ab35d961"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#afa4ca11029e720ec7e164af5ab35d961">ad9361_run_calibration</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 mask)</td></tr>
+<tr class="memitem:adc14c7e4ffb0b5224a0c5b151c98856b"><td class="memItemLeft" align="right" valign="top">static enum rx_gain_table_name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#adc14c7e4ffb0b5224a0c5b151c98856b">ad9361_gt_tableindex</a> (u64 freq)</td></tr>
 <tr class="memitem:a7dc1a874e29b3910c58ba668c7780630"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a7dc1a874e29b3910c58ba668c7780630">ad9361_to_clk</a> (u64 freq)</td></tr>
 <tr class="memitem:a2541fa569730b2bd970a237a99b2b2ae"><td class="memItemLeft" align="right" valign="top">u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a2541fa569730b2bd970a237a99b2b2ae">ad9361_from_clk</a> (unsigned long freq)</td></tr>
+<tr class="memitem:a205953100db7f703cbf914aae836d9ac"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a205953100db7f703cbf914aae836d9ac">ad9361_load_gt</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u64 freq, u32 dest)</td></tr>
+<tr class="memitem:a23c41cac9456950d7f61b810d0d2043e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a23c41cac9456950d7f61b810d0d2043e">ad9361_setup_ext_lna</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 gain_mdB, u32 bypass_loss_mdB)</td></tr>
+<tr class="memitem:aa50d79bf0878f2bb264ef1b532128841"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aa50d79bf0878f2bb264ef1b532128841">ad9361_load_mixer_gm_subtable</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
 <tr class="memitem:a02aa783d75f6aa1e4a196b67f5544feb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a02aa783d75f6aa1e4a196b67f5544feb">ad9361_set_tx_atten</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 atten_mdb, bool tx1, bool tx2, bool immed)</td></tr>
 <tr class="memitem:ac52b9fc0288dae770df994503139ef0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ac52b9fc0288dae770df994503139ef0f">ad9361_get_tx_atten</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 tx_num)</td></tr>
+<tr class="memitem:a76d176dc1c809a2d61bd166eb8aed772"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a76d176dc1c809a2d61bd166eb8aed772">ad9361_rfvco_tableindex</a> (unsigned long freq)</td></tr>
+<tr class="memitem:a63919ef9bdf0ade48ec483182ad58f71"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a63919ef9bdf0ade48ec483182ad58f71">ad9361_rfpll_vco_init</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, bool tx, u64 vco_freq, unsigned long ref_clk)</td></tr>
+<tr class="memitem:a6a28f5fd7bc46022b25ffd6b0fcbd199"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a6a28f5fd7bc46022b25ffd6b0fcbd199">ad9361_get_split_table_gain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 idx_reg, struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *rx_gain)</td></tr>
+<tr class="memitem:a8bfc641c62d87c60cf9096056462c3ba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a8bfc641c62d87c60cf9096056462c3ba">ad9361_get_full_table_gain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 idx_reg, struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *rx_gain)</td></tr>
 <tr class="memitem:ac190fe4a1f9230ed7202bc09f3d22b8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ac190fe4a1f9230ed7202bc09f3d22b8f">ad9361_get_rx_gain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 rx_id, struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *rx_gain)</td></tr>
 <tr class="memitem:a5cbaa482471c862b89fcb3419fd0fc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a5cbaa482471c862b89fcb3419fd0fc29">ad9361_ensm_force_state</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u8 ensm_state)</td></tr>
+<tr class="memitem:a104a9aa7470a666cfbe3cb2d688145a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a104a9aa7470a666cfbe3cb2d688145a0">ad9361_ensm_restore_prev_state</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:ac19882e1fbf8b595e08ba083ed6cc936"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ac19882e1fbf8b595e08ba083ed6cc936">set_split_table_gain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 idx_reg, struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *rx_gain)</td></tr>
+<tr class="memitem:a03bb23268c752818a8542bd844cb03c2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a03bb23268c752818a8542bd844cb03c2">set_full_table_gain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 idx_reg, struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *rx_gain)</td></tr>
 <tr class="memitem:ae485da45f31ddb8458120637e3478a46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ae485da45f31ddb8458120637e3478a46">ad9361_set_rx_gain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 rx_id, struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *rx_gain)</td></tr>
+<tr class="memitem:a67d1dab21adff9d408cedf825569a15f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a67d1dab21adff9d408cedf825569a15f">ad9361_init_gain_info</a> (struct <a class="el" href="structrx__gain__info.html">rx_gain_info</a> *rx_gain, enum rx_gain_table_type type, int starting_gain, int max_gain, int gain_step, int max_idx, int idx_offset)</td></tr>
 <tr class="memitem:a25700a251293ec1efb5734c5de908d2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a25700a251293ec1efb5734c5de908d2f">ad9361_init_gain_tables</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:aae306962ade8e838330371bd0a27ce1a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aae306962ade8e838330371bd0a27ce1a">ad9361_en_dis_tx</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 tx_if, u32 enable)</td></tr>
+<tr class="memitem:aafef76ac8cbad0859d1185b9ae66544f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aafef76ac8cbad0859d1185b9ae66544f">ad9361_en_dis_rx</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 rx_if, u32 enable)</td></tr>
 <tr class="memitem:a9fda0f64d9219993efa2bab2d6b9f945"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a9fda0f64d9219993efa2bab2d6b9f945">ad9361_set_gain_ctrl_mode</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, struct <a class="el" href="structrf__gain__ctrl.html">rf_gain_ctrl</a> *gain_ctrl)</td></tr>
 <tr class="memitem:ab10cef8cfdcb8eca0e429a60e7101671"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ab10cef8cfdcb8eca0e429a60e7101671">ad9361_read_rssi</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, struct <a class="el" href="structrf__rssi.html">rf_rssi</a> *rssi)</td></tr>
+<tr class="memitem:a09cfb5673aee0e698311bc884367ffef"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a09cfb5673aee0e698311bc884367ffef">ad9361_rx_adc_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long bbpll_freq, unsigned long adc_sampl_freq_Hz)</td></tr>
+<tr class="memitem:ae3ee4854d371ef903f607d4185b4ee13"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ae3ee4854d371ef903f607d4185b4ee13">ad9361_rx_tia_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long bb_bw_Hz)</td></tr>
+<tr class="memitem:a40a502f46a334a52fe6f3ea48bd42a86"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a40a502f46a334a52fe6f3ea48bd42a86">ad9361_rx_bb_analog_filter_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long rx_bb_bw, unsigned long bbpll_freq)</td></tr>
+<tr class="memitem:a4fe4dece24679b999e84a645f1455785"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a4fe4dece24679b999e84a645f1455785">ad9361_tx_bb_analog_filter_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long tx_bb_bw, unsigned long bbpll_freq)</td></tr>
+<tr class="memitem:ac0273aed26ac3111694f062a6ba31182"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ac0273aed26ac3111694f062a6ba31182">ad9361_tx_bb_second_filter_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long tx_rf_bw)</td></tr>
+<tr class="memitem:aa54312b065d3020f4dc6cc74f4403c84"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aa54312b065d3020f4dc6cc74f4403c84">ad9361_txrx_synth_cp_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long ref_clk_hz, bool tx)</td></tr>
+<tr class="memitem:af71221a8f8afb45fb55da7dc2f4c0d3e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#af71221a8f8afb45fb55da7dc2f4c0d3e">ad9361_bb_dc_offset_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:a197692ff272ff644f4afaa3a0fd75231"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a197692ff272ff644f4afaa3a0fd75231">ad9361_rf_dc_offset_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u64 rx_freq)</td></tr>
+<tr class="memitem:a174353deff39c816c22af935d06d57ca"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a174353deff39c816c22af935d06d57ca">ad9361_tx_quad_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long bw, int rx_phase)</td></tr>
+<tr class="memitem:a6281fedc2c402f025b6cfda3c1d89d06"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a6281fedc2c402f025b6cfda3c1d89d06">ad9361_rx_quad_calib</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long bw)</td></tr>
+<tr class="memitem:abcb79c1a42bd3e83b7527065e2e0fa9c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#abcb79c1a42bd3e83b7527065e2e0fa9c">ad9361_tracking_control</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, bool bbdc_track, bool rfdc_track, bool rxquad_track)</td></tr>
+<tr class="memitem:afa588033a9d1a463f6e105a54322ee2c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#afa588033a9d1a463f6e105a54322ee2c">ad9361_set_ref_clk_cycles</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long ref_clk_hz)</td></tr>
+<tr class="memitem:a9bf4bcca4bf0732cdbb2228d81824cce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a9bf4bcca4bf0732cdbb2228d81824cce">ad9361_set_dcxo_tune</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 coarse, u32 fine)</td></tr>
+<tr class="memitem:a2b0396857b3a404f4858145a7e47de33"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a2b0396857b3a404f4858145a7e47de33">ad9361_rf_port_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 rx_inputs, u32 txb)</td></tr>
+<tr class="memitem:a89dbf9375eef83393b336fd97e469b08"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a89dbf9375eef83393b336fd97e469b08">ad9361_pp_port_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, bool restore_c3)</td></tr>
+<tr class="memitem:ac5c1d70e11c06c655d8ffe456825cca8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ac5c1d70e11c06c655d8ffe456825cca8">ad9361_gc_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, struct <a class="el" href="structgain__control.html">gain_control</a> *ctrl)</td></tr>
+<tr class="memitem:adbe1559178f0aea4722f5c8bddc683f3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#adbe1559178f0aea4722f5c8bddc683f3">ad9361_auxdac_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:a447c4fe44d45b55b0fcaf971751ce640"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a447c4fe44d45b55b0fcaf971751ce640">ad9361_auxadc_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, struct <a class="el" href="structauxadc__control.html">auxadc_control</a> *ctrl, unsigned long bbpll_freq)</td></tr>
+<tr class="memitem:a4df4e0daf9c177184f2967e036778a28"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a4df4e0daf9c177184f2967e036778a28">ad9361_get_temp</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:afcde105e2602996279e981c54bc6091c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#afcde105e2602996279e981c54bc6091c">ad9361_ctrl_outs_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, struct <a class="el" href="structctrl__outs__control.html">ctrl_outs_control</a> *ctrl)</td></tr>
+<tr class="memitem:a538b3be562c5c36380baae8176664b68"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a538b3be562c5c36380baae8176664b68">ad9361_gpo_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:a46be783f965c7a44b2a2515890f479f3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a46be783f965c7a44b2a2515890f479f3">ad9361_rssi_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, struct <a class="el" href="structrssi__control.html">rssi_control</a> *ctrl, bool is_update)</td></tr>
+<tr class="memitem:adbed522323101e774095fc1cb706c0db"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#adbed522323101e774095fc1cb706c0db">ad9361_ensm_set_state</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u8 ensm_state, bool pinctrl)</td></tr>
 <tr class="memitem:ae6c7a4582db7fa277224bef382c0c161"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ae6c7a4582db7fa277224bef382c0c161">ad9361_set_trx_clock_chain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long *rx_path_clks, unsigned long *tx_path_clks)</td></tr>
+<tr class="memitem:adbae49a255a2cf847ad4367e24395c95"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#adbae49a255a2cf847ad4367e24395c95">ad9361_get_trx_clock_chain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long *rx_path_clks, unsigned long *tx_path_clks)</td></tr>
 <tr class="memitem:a14bf6cd01315d6622af42ab9e75cb2f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a14bf6cd01315d6622af42ab9e75cb2f2">ad9361_calculate_rf_clock_chain</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, unsigned long tx_sample_rate, u32 rate_gov, unsigned long *rx_path_clks, unsigned long *tx_path_clks)</td></tr>
+<tr class="memitem:a17374a6ca7ef01f3fd60bfb46fdc6f99"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a17374a6ca7ef01f3fd60bfb46fdc6f99">ad9361_set_ensm_mode</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, bool fdd, bool pinctrl)</td></tr>
 <tr class="memitem:a39072de34f5d7c9af549466153c49f9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a39072de34f5d7c9af549466153c49f9b">ad9361_setup</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:a39b4414c5958dfcf21fdc415f7ad9fbc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a39b4414c5958dfcf21fdc415f7ad9fbc">ad9361_do_calib_run</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 cal, int arg)</td></tr>
 <tr class="memitem:a6addad978a0e229dd8c1dd15b0c02b5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a6addad978a0e229dd8c1dd15b0c02b5e">ad9361_update_rf_bandwidth</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, u32 rf_rx_bw, u32 rf_tx_bw)</td></tr>
 <tr class="memitem:a31cf9ff7213a93b55678f910af36e1bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a31cf9ff7213a93b55678f910af36e1bd">ad9361_load_fir_filter_coef</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, enum fir_dest dest, int gain_dB, u32 ntaps, short *coef)</td></tr>
+<tr class="memitem:a81b10af50209274668b66c9397c375ad"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a81b10af50209274668b66c9397c375ad">ad9361_parse_fir</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, char *data, u32 size)</td></tr>
 <tr class="memitem:a976e9fc6036098a37a93f5f01fd20a8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a976e9fc6036098a37a93f5f01fd20a8f">ad9361_validate_enable_fir</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
+<tr class="memitem:a46a87d5338ddce877817a9068f2d9140"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a46a87d5338ddce877817a9068f2d9140">ad9361_set_muldiv</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *priv, u32 mul, u32 div)</td></tr>
+<tr class="memitem:a76c4c356f41ee04811e25928dfb6b8fe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a76c4c356f41ee04811e25928dfb6b8fe">ad9361_get_clk_scaler</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv)</td></tr>
+<tr class="memitem:af37eb2585d359dc5f7564fd59b4db244"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#af37eb2585d359dc5f7564fd59b4db244">ad9361_to_refclk_scaler</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv)</td></tr>
+<tr class="memitem:a9bd4cbacf878e3023b53b508fa39fe9e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a9bd4cbacf878e3023b53b508fa39fe9e">ad9361_set_clk_scaler</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, bool set)</td></tr>
 <tr class="memitem:aa523647144de88229317b68a595847dc"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aa523647144de88229317b68a595847dc">ad9361_clk_factor_recalc_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long parent_rate)</td></tr>
 <tr class="memitem:acd691bc8546aaadcc9277b80ee6a301d"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#acd691bc8546aaadcc9277b80ee6a301d">ad9361_clk_factor_round_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long rate, unsigned long *prate)</td></tr>
 <tr class="memitem:aa77e394a542759bc2d07c946b2561a4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aa77e394a542759bc2d07c946b2561a4f">ad9361_clk_factor_set_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long rate, unsigned long parent_rate)</td></tr>
 <tr class="memitem:af7640529e60671d172c9136a7801b221"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#af7640529e60671d172c9136a7801b221">ad9361_bbpll_recalc_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long parent_rate)</td></tr>
 <tr class="memitem:a4e91de5f76bd81fb72b5c545b749cd03"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a4e91de5f76bd81fb72b5c545b749cd03">ad9361_bbpll_round_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long rate, unsigned long *prate)</td></tr>
 <tr class="memitem:a8b1ddf1bb07e7935dcbf3344fdfc77d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a8b1ddf1bb07e7935dcbf3344fdfc77d7">ad9361_bbpll_set_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long rate, unsigned long parent_rate)</td></tr>
+<tr class="memitem:aaf98941f81d360b4e851ebfe84b51a58"><td class="memItemLeft" align="right" valign="top">static u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#aaf98941f81d360b4e851ebfe84b51a58">ad9361_calc_rfpll_freq</a> (u64 parent_rate, u64 integer, u64 fract, u32 vco_div)</td></tr>
+<tr class="memitem:a730cf6691d67abab4ad9f1e183e18168"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a730cf6691d67abab4ad9f1e183e18168">ad9361_calc_rfpll_divder</a> (u64 freq, u64 parent_rate, u32 *integer, u32 *fract, int *vco_div, u64 *vco_freq)</td></tr>
 <tr class="memitem:a60eb5fc54c32389bf10f4da1c9cdc184"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a60eb5fc54c32389bf10f4da1c9cdc184">ad9361_rfpll_recalc_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long parent_rate)</td></tr>
 <tr class="memitem:a1943ef3caf4c31be2c9287a63d128f53"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#a1943ef3caf4c31be2c9287a63d128f53">ad9361_rfpll_round_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long rate, unsigned long *prate)</td></tr>
 <tr class="memitem:ad6665a42027a2244fa28cde9f55a5fe3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ad6665a42027a2244fa28cde9f55a5fe3">ad9361_rfpll_set_rate</a> (struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *clk_priv, unsigned long rate, unsigned long parent_rate)</td></tr>
+<tr class="memitem:ad80a956d8916914401ec3edc44fa9734"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structclk.html">clk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ad80a956d8916914401ec3edc44fa9734">ad9361_clk_register</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy, const char *name, const char *parent_name, unsigned long flags, u32 source, u32 parent_source)</td></tr>
 <tr class="memitem:ad1930dc0f083df7b093544a8c3b965b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ad9361_8c.html#ad1930dc0f083df7b093544a8c3b965b6">register_clocks</a> (struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *phy)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ad78e20e6c687a4a840ae5a854a2dd4ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad78e20e6c687a4a840ae5a854a2dd4ed"></a>
+static struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SynthLUT_FDD</b> [LUT_FTDD_ENT][SYNTH_LUT_SIZE]</td></tr>
 <tr class="memitem:a4cb7ade398b063b887a0fd2b6b9f5193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cb7ade398b063b887a0fd2b6b9f5193"></a>
 struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SynthLUT_TDD</b> [LUT_FTDD_ENT][SYNTH_LUT_SIZE]</td></tr>
+<tr class="memitem:a195deaeb2c65642154f871cd2518a23f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a195deaeb2c65642154f871cd2518a23f"></a>
+static const u8&#160;</td><td class="memItemRight" valign="bottom"><b>full_gain_table</b> [RXGAIN_TBLS_END][SIZE_FULL_TABLE][3]</td></tr>
+<tr class="memitem:aa635d93bdb7ceb42757144bf8785f348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa635d93bdb7ceb42757144bf8785f348"></a>
+static const u8&#160;</td><td class="memItemRight" valign="bottom"><b>split_gain_table</b> [RXGAIN_TBLS_END][SIZE_SPLIT_TABLE][3]</td></tr>
+<tr class="memitem:a3dd710aafd82d834bb340ec5fd2a1ee2"><td class="memItemLeft" align="right" valign="top">static const u8&#160;</td><td class="memItemRight" valign="bottom"><b>gm_st_gain</b> [16]</td></tr>
+<tr class="memitem:ab88b5bdc4eb80e8259e4a86c46cff33e"><td class="memItemLeft" align="right" valign="top">static const u8&#160;</td><td class="memItemRight" valign="bottom"><b>gm_st_ctrl</b> [16]</td></tr>
+<tr class="memitem:acc2a29d28f66d50643369f356375c9fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc2a29d28f66d50643369f356375c9fb"></a>
+static const s8&#160;</td><td class="memItemRight" valign="bottom"><b>lna_table</b> [] = {6, 17, 19, 25}</td></tr>
+<tr class="memitem:aa9cd250f6211bef40d07110f0074f773"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9cd250f6211bef40d07110f0074f773"></a>
+static const s8&#160;</td><td class="memItemRight" valign="bottom"><b>tia_table</b> [] = {-6, 0}</td></tr>
+<tr class="memitem:a858c52f3169a68a5cb269d00ea760fdd"><td class="memItemLeft" align="right" valign="top">static const s8&#160;</td><td class="memItemRight" valign="bottom"><b>mixer_table</b> []</td></tr>
+<tr class="memitem:a07d14d76701943e9e46b641f9f9ac6fd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>ad9361_ensm_states</b> []</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Implementation of AD9361 Driver. </p>
@@ -180,7 +248,7 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;__ad9361_spi_readf(reg, mask, __ffs(mask))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="ad9361_8c.html#a8312b0a524a567c2c745eb6b2e811960">__ad9361_spi_readf</a>(reg, mask, __ffs(mask))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -221,7 +289,7 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;__ad9361_spi_writef(reg, mask, __ffs(mask), val)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="ad9361_8c.html#a7462764aba2c3b1a0145b63526ebdb83">__ad9361_spi_writef</a>(reg, mask, __ffs(mask), val)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -239,6 +307,227 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 </div>
 </div>
 <h2>Function Documentation</h2>
+<a class="anchor" id="a8312b0a524a567c2c745eb6b2e811960"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int __ad9361_spi_readf </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SPI register bits read. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>The register address. </td></tr>
+    <tr><td class="paramname">mask</td><td>The bits mask. </td></tr>
+    <tr><td class="paramname">offset</td><td>The mask offset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The bits value or negative error code in case of failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7462764aba2c3b1a0145b63526ebdb83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int __ad9361_spi_writef </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SPI register bits write. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>The register address. </td></tr>
+    <tr><td class="paramname">mask</td><td>The bits mask. </td></tr>
+    <tr><td class="paramname">offset</td><td>The mask offset. </td></tr>
+    <tr><td class="paramname">val</td><td>The bits value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a447c4fe44d45b55b0fcaf971751ce640"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_auxadc_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structauxadc__control.html">auxadc_control</a> *&#160;</td>
+          <td class="paramname"><em>ctrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bbpll_freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the AuxADC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ctrl</td><td>The AuxADC settings. </td></tr>
+    <tr><td class="paramname">bbpll_freq</td><td>The BBPLL frequency [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adbe1559178f0aea4722f5c8bddc683f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_auxdac_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the AuxDAC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af71221a8f8afb45fb55da7dc2f4c0d3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_bb_dc_offset_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a baseband DC offset calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="af7640529e60671d172c9136a7801b221"></a>
 <div class="memitem">
 <div class="memproto">
@@ -358,6 +647,134 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a730cf6691d67abab4ad9f1e183e18168"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_calc_rfpll_divder </td>
+          <td>(</td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>parent_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramname"><em>integer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramname"><em>fract</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>vco_div</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64 *&#160;</td>
+          <td class="paramname"><em>vco_freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the RFPLL dividers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freq</td><td>The RFPLL frequency. </td></tr>
+    <tr><td class="paramname">parent_rate</td><td>The parent clock rate. </td></tr>
+    <tr><td class="paramname">integer</td><td>The integer value. </td></tr>
+    <tr><td class="paramname">fract</td><td>The fractional value. </td></tr>
+    <tr><td class="paramname">vco_div</td><td>The VCO divider. </td></tr>
+    <tr><td class="paramname">vco_freq</td><td>The VCO frequency. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The RFPLL frequency. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf98941f81d360b4e851ebfe84b51a58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static u64 ad9361_calc_rfpll_freq </td>
+          <td>(</td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>parent_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>integer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>fract</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>vco_div</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the RFPLL frequency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent_rate</td><td>The parent clock rate. </td></tr>
+    <tr><td class="paramname">integer</td><td>The integer value. </td></tr>
+    <tr><td class="paramname">fract</td><td>The fractional value. </td></tr>
+    <tr><td class="paramname">vco_div</td><td>The VCO divider. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The RFPLL frequency. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a14bf6cd01315d6622af42ab9e75cb2f2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -407,6 +824,63 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
     <tr><td class="paramname">rate_gov</td><td>The rate governor option. </td></tr>
     <tr><td class="paramname">rx_path_clks</td><td>RX path rates buffer. </td></tr>
     <tr><td class="paramname">tx_path_clks</td><td>TX path rates buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a390ca0d74a254ee0d81fcbd571121671"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_check_cal_done </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>done_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check the calibration done bit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">reg</td><td>The register address. </td></tr>
+    <tr><td class="paramname">mask</td><td>The bit mask. </td></tr>
+    <tr><td class="paramname">done_state</td><td>The done state [0,1]. </td></tr>
   </table>
   </dd>
 </dl>
@@ -533,6 +1007,270 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="ad80a956d8916914401ec3edc44fa9734"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structclk.html">clk</a>* ad9361_clk_register </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>parent_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>parent_source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Register and initialize a new clock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the new clock. </td></tr>
+    <tr><td class="paramname">parent_name</td><td>The name of the parent clock. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags. </td></tr>
+    <tr><td class="paramname">source</td><td>The source of the new clock. </td></tr>
+    <tr><td class="paramname">parent_source</td><td>The source of the parent clock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A struct clk for the new clock or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcde105e2602996279e981c54bc6091c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_ctrl_outs_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structctrl__outs__control.html">ctrl_outs_control</a> *&#160;</td>
+          <td class="paramname"><em>ctrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the Control Output pins. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ctrl</td><td>The Control Output pins settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a39b4414c5958dfcf21fdc415f7ad9fbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_do_calib_run </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>cal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform the selected calibration </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">cal</td><td>The selected calibration. </td></tr>
+    <tr><td class="paramname">arg</td><td>The argument of the calibration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aafef76ac8cbad0859d1185b9ae66544f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_en_dis_rx </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>rx_if</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable/disable the desired RX channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">tx_if</td><td>The desired channel number [1, 2]. </td></tr>
+    <tr><td class="paramname">enable</td><td>Enable/disable option. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aae306962ade8e838330371bd0a27ce1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_en_dis_tx </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>tx_if</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable/disable the desired TX channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">tx_if</td><td>The desired channel number [1, 2]. </td></tr>
+    <tr><td class="paramname">enable</td><td>Enable/disable option. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5cbaa482471c862b89fcb3419fd0fc29"></a>
 <div class="memitem">
 <div class="memproto">
@@ -568,6 +1306,88 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a104a9aa7470a666cfbe3cb2d688145a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ad9361_ensm_restore_prev_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Restore the previous Enable State Machine (ENSM) state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adbed522323101e774095fc1cb706c0db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_ensm_set_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>ensm_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pinctrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the desired Enable State Machine (ENSM) state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ensm_state</td><td>The ENSM state [ENSM_STATE_SLEEP_WAIT, ENSM_STATE_ALERT, ENSM_STATE_TX, ENSM_STATE_TX_FLUSH, ENSM_STATE_RX, ENSM_STATE_RX_FLUSH, ENSM_STATE_FDD, ENSM_STATE_FDD_FLUSH]. </td></tr>
+    <tr><td class="paramname">pinctrl</td><td>Set true, will enable the ENSM pin control. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a2541fa569730b2bd970a237a99b2b2ae"></a>
 <div class="memitem">
 <div class="memproto">
@@ -589,6 +1409,131 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The shifted frequency value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5c1d70e11c06c655d8ffe456825cca8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_gc_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structgain__control.html">gain_control</a> *&#160;</td>
+          <td class="paramname"><em>ctrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the Gain Control Blocks (common function for MGC, AGC modes) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ctrl</td><td>The gain control settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a76c4c356f41ee04811e25928dfb6b8fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_get_clk_scaler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *&#160;</td>
+          <td class="paramname"><em>clk_priv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the clk scaler for the selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">priv</td><td>The selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8bfc641c62d87c60cf9096056462c3ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_get_full_table_gain </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>idx_reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *&#160;</td>
+          <td class="paramname"><em>rx_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the current gain in Full Gain Table Mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">idx_reg</td><td>Register base address for the selected receiver </td></tr>
+    <tr><td class="paramname">rx_gain</td><td>A <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> struct to store the RF gain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success </dd></dl>
 
 </div>
 </div>
@@ -634,6 +1579,138 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a6a28f5fd7bc46022b25ffd6b0fcbd199"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_get_split_table_gain </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>idx_reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *&#160;</td>
+          <td class="paramname"><em>rx_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the current gain in Split Gain Table Mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">idx_reg</td><td>Register base address for the selected receiver </td></tr>
+    <tr><td class="paramname">rx_gain</td><td>A <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> struct to store the RF gain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4df4e0daf9c177184f2967e036778a28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_get_temp </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the measured temperature of the device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The measured temperature of the device. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adbae49a255a2cf847ad4367e24395c95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_get_trx_clock_chain </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>rx_path_clks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>tx_path_clks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the RX and TX path rates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">rx_path_clks</td><td>RX path rates buffer. </td></tr>
+    <tr><td class="paramname">tx_path_clks</td><td>TX path rates buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac52b9fc0288dae770df994503139ef0f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -666,6 +1743,148 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The attenuation value [mdB] or negative error code in case of failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a538b3be562c5c36380baae8176664b68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_gpo_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the GPO pins. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc14c7e4ffb0b5224a0c5b151c98856b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static enum rx_gain_table_name ad9361_gt_tableindex </td>
+          <td>(</td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>freq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Choose the right RX gain table index for the selected frequency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freq</td><td>The frequency value [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index to the RX gain table. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a67d1dab21adff9d408cedf825569a15f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ad9361_init_gain_info </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrx__gain__info.html">rx_gain_info</a> *&#160;</td>
+          <td class="paramname"><em>rx_gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum rx_gain_table_type&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>starting_gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gain_step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the <a class="el" href="structrx__gain__info.html">rx_gain_info</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rx_gain</td><td>The <a class="el" href="structrx__gain__info.html">rx_gain_info</a> structure pointer. </td></tr>
+    <tr><td class="paramname">type</td><td>Either Full or Split Table </td></tr>
+    <tr><td class="paramname">starting_gain</td><td>The starting gain value. </td></tr>
+    <tr><td class="paramname">max_gain</td><td>The maximum gain value. </td></tr>
+    <tr><td class="paramname">gain_step</td><td>The gain step. </td></tr>
+    <tr><td class="paramname">max_idx</td><td>The max table size. </td></tr>
+    <tr><td class="paramname">idx_offset</td><td>Offset in the table where linear progression starts </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
 </div>
 </div>
@@ -749,6 +1968,181 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a205953100db7f703cbf914aae836d9ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_load_gt </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Load the gain table for the selected frequency range and receiver. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">freq</td><td>The frequency value [Hz]. </td></tr>
+    <tr><td class="paramname">dest</td><td>The destination [GT_RX1, GT_RX2]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa50d79bf0878f2bb264ef1b532128841"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_load_mixer_gm_subtable </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Load the Gm Sub Table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81b10af50209274668b66c9397c375ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_parse_fir </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parse the FIR filter file/buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>Buffer size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89dbf9375eef83393b336fd97e469b08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_pp_port_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>restore_c3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the Parallel Port (Digital Data Interface). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">restore_c3</td><td>Set true, will restore the Parallel Port Configuration 3 register. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab10cef8cfdcb8eca0e429a60e7101671"></a>
 <div class="memitem">
 <div class="memproto">
@@ -801,6 +2195,100 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a197692ff272ff644f4afaa3a0fd75231"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rf_dc_offset_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>rx_freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a RF DC offset calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ref_clk_hz</td><td>The RX LO frequency [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b0396857b3a404f4858145a7e47de33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rf_port_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>rx_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>txb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the RF port. Note: val 0 (RX1A_N &amp; RX1A_P) and (RX2A_N &amp; RX2A_P) enabled; balanced 1 (RX1B_N &amp; RX1B_P) and (RX2B_N &amp; RX2B_P) enabled; balanced 2 (RX1C_N &amp; RX1C_P) and (RX2C_N &amp; RX2C_P) enabled; balanced</p>
+<p>3 RX1A_N and RX2A_N enabled; unbalanced 4 RX1A_P and RX2A_P enabled; unbalanced 5 RX1B_N and RX2B_N enabled; unbalanced 6 RX1B_P and RX2B_P enabled; unbalanced 7 RX1C_N and RX2C_N enabled; unbalanced 8 RX1C_P and RX2C_P enabled; unbalanced </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">rx_inputs</td><td>RX input option identifier </td></tr>
+    <tr><td class="paramname">txb</td><td>TX output option identifier </td></tr>
   </table>
   </dd>
 </dl>
@@ -927,6 +2415,517 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a63919ef9bdf0ade48ec483182ad58f71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rfpll_vco_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u64&#160;</td>
+          <td class="paramname"><em>vco_freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ref_clk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the RFPLL VCO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">tx</td><td>Set true for TX_RFPLL. </td></tr>
+    <tr><td class="paramname">vco_freq</td><td>The VCO frequency [Hz]. </td></tr>
+    <tr><td class="paramname">ref_clk</td><td>The reference clock frequency [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a76d176dc1c809a2d61bd166eb8aed772"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static u32 ad9361_rfvco_tableindex </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>freq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Choose the right RF VCO table index for the selected frequency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freq</td><td>The frequency value [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index from the RF VCO table. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a46be783f965c7a44b2a2515890f479f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rssi_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrssi__control.html">rssi_control</a> *&#160;</td>
+          <td class="paramname"><em>ctrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_update</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the RSSI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ctrl</td><td>The RSSI settings. </td></tr>
+    <tr><td class="paramname">is_update</td><td>True if update </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afa4ca11029e720ec7e164af5ab35d961"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_run_calibration </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Run an AD9361 calibration and check the calibration done bit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">mask</td><td>The calibration bit mask[RX_BB_TUNE_CAL, TX_BB_TUNE_CAL, RX_QUAD_CAL, TX_QUAD_CAL, RX_GAIN_STEP_CAL, TXMON_CAL, RFDC_CAL, BBDC_CAL]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09cfb5673aee0e698311bc884367ffef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rx_adc_setup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bbpll_freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>adc_sampl_freq_Hz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the RX ADC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">bbpll_freq</td><td>The BBPLL frequency [Hz]. </td></tr>
+    <tr><td class="paramname">adc_sampl_freq_Hz</td><td>The ADC sampling frequency [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a40a502f46a334a52fe6f3ea48bd42a86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rx_bb_analog_filter_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>rx_bb_bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bbpll_freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a baseband RX analog filter calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">rx_bb_bw</td><td>The baseband bandwidth [Hz]. </td></tr>
+    <tr><td class="paramname">bbpll_freq</td><td>The BBPLL frequency [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6281fedc2c402f025b6cfda3c1d89d06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rx_quad_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a RX quadrature calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">bw</td><td>The bandwidth [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae3ee4854d371ef903f607d4185b4ee13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_rx_tia_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bb_bw_Hz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a RX TIA calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">bb_bw_Hz</td><td>The baseband bandwidth [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9bd4cbacf878e3023b53b508fa39fe9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_set_clk_scaler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *&#160;</td>
+          <td class="paramname"><em>clk_priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set clk scaler for the selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clk_priv</td><td>The selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </td></tr>
+    <tr><td class="paramname">set</td><td>Set true, the reference clock frequency will be scaled before it enters the BBPLL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9bf4bcca4bf0732cdbb2228d81824cce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_set_dcxo_tune </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>coarse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>fine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the DCXO tune. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">coarse</td><td>The DCXO tune coarse. </td></tr>
+    <tr><td class="paramname">fine</td><td>The DCXO tune fine. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a17374a6ca7ef01f3fd60bfb46fdc6f99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_set_ensm_mode </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fdd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pinctrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal ENSM mode options helper function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">fdd</td><td></td></tr>
+    <tr><td class="paramname">pinctrl</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9fda0f64d9219993efa2bab2d6b9f945"></a>
 <div class="memitem">
 <div class="memproto">
@@ -955,6 +2954,99 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
   <table class="params">
     <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
     <tr><td class="paramname"><a class="el" href="structrf__gain__ctrl.html">rf_gain_ctrl</a></td><td>A <a class="el" href="structrf__gain__ctrl.html">rf_gain_ctrl</a> struct that contains the the desired channel information and the gain control mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a46a87d5338ddce877817a9068f2d9140"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_set_muldiv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>mul</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>div</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the multiplier and the divider for the selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">priv</td><td>The selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </td></tr>
+    <tr><td class="paramname">mul</td><td>The multiplier value. </td></tr>
+    <tr><td class="paramname">div</td><td>The divider value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afa588033a9d1a463f6e105a54322ee2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_set_ref_clk_cycles </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ref_clk_hz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the reference clock delay unit counter register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ref_clk_hz</td><td>The reference clock frequency [Hz]. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1126,6 +3218,56 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a23c41cac9456950d7f61b810d0d2043e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_setup_ext_lna </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>gain_mdB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>bypass_loss_mdB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the external low-noise amplifier (LNA). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">gain_mdB</td><td>High gain(non-bypass) value [mdB]. </td></tr>
+    <tr><td class="paramname">bypass_loss_mdB</td><td>Low gain (bypass) value [mdB]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7a458d24c508faa07d1ec0223f5e26f5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1147,6 +3289,56 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The register value or negative error code in case of failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae2e55a8ec344dc2f0f0d076365d0e675"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_spi_readm </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>rbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SPI multiple bytes register read. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>The register address. </td></tr>
+    <tr><td class="paramname">rbuf</td><td>The data buffer. </td></tr>
+    <tr><td class="paramname">num</td><td>The number of bytes to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1185,6 +3377,56 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a14791701108d852029a80ea56b30429a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_spi_writem </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>tbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SPI multiple bytes register write. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg</td><td>The register address. </td></tr>
+    <tr><td class="paramname">tbuf</td><td>The data buffer. </td></tr>
+    <tr><td class="paramname">num</td><td>The number of bytes to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7dc1a874e29b3910c58ba668c7780630"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1206,6 +3448,288 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The shifted frequency value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af37eb2585d359dc5f7564fd59b4db244"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_to_refclk_scaler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrefclk__scale.html">refclk_scale</a> *&#160;</td>
+          <td class="paramname"><em>clk_priv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the REFCLK Scaler for the selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. Note: REFCLK Scaler values - 00: x1; 01: x½; 10: x¼; 11: x2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clk_priv</td><td>The selected <a class="el" href="structrefclk__scale.html">refclk_scale</a> structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abcb79c1a42bd3e83b7527065e2e0fa9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_tracking_control </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bbdc_track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rfdc_track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rxquad_track</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup RX tracking calibrations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">bbdc_track</td><td>Set true, will enable the BBDC tracking. </td></tr>
+    <tr><td class="paramname">rfdc_track</td><td>Set true, will enable the RFDC tracking. </td></tr>
+    <tr><td class="paramname">rxquad_track</td><td>Set true, will enable the RXQUAD tracking. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4fe4dece24679b999e84a645f1455785"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_tx_bb_analog_filter_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>tx_bb_bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bbpll_freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a baseband TX analog filter calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">tx_bb_bw</td><td>The baseband bandwidth [Hz]. </td></tr>
+    <tr><td class="paramname">bbpll_freq</td><td>The BBPLL frequency [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0273aed26ac3111694f062a6ba31182"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_tx_bb_second_filter_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>tx_rf_bw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a baseband TX secondary filter calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">tx_rf_bw</td><td>The RF bandwidth [Hz]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a174353deff39c816c22af935d06d57ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_tx_quad_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rx_phase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a TX quadrature calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">bw</td><td>The bandwidth [Hz]. </td></tr>
+    <tr><td class="paramname">rx_phase</td><td>The optional RX phase value overwrite (set to zero). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa54312b065d3020f4dc6cc74f4403c84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ad9361_txrx_synth_cp_calib </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ref_clk_hz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Perform a RF synthesizer charge pump calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">ref_clk_hz</td><td>The reference clock rate [Hz]. </td></tr>
+    <tr><td class="paramname">tx</td><td>The Synthesizer TX = 1, RX = 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1299,10 +3823,203 @@ struct <a class="el" href="structSynthLUT.html">SynthLUT</a>&#160;</td><td class
 
 </div>
 </div>
+<a class="anchor" id="a03bb23268c752818a8542bd844cb03c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int set_full_table_gain </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>idx_reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *&#160;</td>
+          <td class="paramname"><em>rx_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set gain in Full Gain Table Mode (used only in Manual Gain Control Mode). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">idx_reg</td><td>Register base address for the selected receiver </td></tr>
+    <tr><td class="paramname">rx_gain</td><td>The <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> struct containing the RF gain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac19882e1fbf8b595e08ba083ed6cc936"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int set_split_table_gain </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structad9361__rf__phy.html">ad9361_rf_phy</a> *&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>idx_reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> *&#160;</td>
+          <td class="paramname"><em>rx_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set gain in Split Gain Table Mode (used only in Manual Gain Control Mode). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phy</td><td>The AD9361 state structure. </td></tr>
+    <tr><td class="paramname">idx_reg</td><td>Register base address for the selected receiver </td></tr>
+    <tr><td class="paramname">rx_gain</td><td>The <a class="el" href="structrf__rx__gain.html">rf_rx_gain</a> struct containing the RF gain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 in case of success, negative error code otherwise. </dd></dl>
+
+</div>
+</div>
+<h2>Variable Documentation</h2>
+<a class="anchor" id="a07d14d76701943e9e46b641f9f9ac6fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ad9361_ensm_states[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> {</div>
+<div class="line">                <span class="stringliteral">&quot;sleep&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;alert&quot;</span>, <span class="stringliteral">&quot;tx&quot;</span>, <span class="stringliteral">&quot;tx flush&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;rx&quot;</span>, <span class="stringliteral">&quot;rx_flush&quot;</span>, <span class="stringliteral">&quot;fdd&quot;</span>, <span class="stringliteral">&quot;fdd_flush&quot;</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab88b5bdc4eb80e8259e4a86c46cff33e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u8 gm_st_ctrl[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> {0x0, 0xD, 0x15, 0x1B, 0x21, 0x25, 0x29,</div>
+<div class="line">                         0x2C, 0x2F, 0x31, 0x33, 0x34, 0x35, 0x3A, 0x3D, 0x3E}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3dd710aafd82d834bb340ec5fd2a1ee2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u8 gm_st_gain[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> {0x78, 0x74, 0x70, 0x6C, 0x68, 0x64, 0x60,</div>
+<div class="line">                         0x5C, 0x58, 0x54, 0x50, 0x4C, 0x48, 0x30, 0x18, 0x0}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a858c52f3169a68a5cb269d00ea760fdd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const s8 mixer_table[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> {0, 5, 11, 16,</div>
+<div class="line">                        17, 18, 19, 20,</div>
+<div class="line">                        21, 22, 23, 24,</div>
+<div class="line">                        25, 26, 27, 28}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 4 2013 10:19:30 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 4 2013 10:34:23 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
