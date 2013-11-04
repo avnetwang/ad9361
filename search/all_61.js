@@ -123,5 +123,6 @@ var searchData=
   ['adc_5finit',['adc_init',['../adc__core_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0',1,'adc_init(void):&#160;adc_core.c'],['../adc__core_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0',1,'adc_init(void):&#160;adc_core.c']]],
   ['adc_5fread',['adc_read',['../adc__core_8c.html#abb7b1061b9c700935a4575d3f8b526d1',1,'adc_core.c']]],
   ['adc_5fwrite',['adc_write',['../adc__core_8c.html#a53bb2577fe0231e305319b8e16a0fab8',1,'adc_core.c']]],
-  ['auxadc_5fcontrol',['auxadc_control',['../structauxadc__control.html',1,'']]]
+  ['auxadc_5fcontrol',['auxadc_control',['../structauxadc__control.html',1,'']]],
+  ['ad9361_20no_2dos_20software',['AD9361 No-OS Software',['../index.html',1,'']]]
 ];
