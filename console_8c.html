@@ -102,7 +102,9 @@ Include dependency graph for console.c:</div>
 <map name="sw_2console_8c" id="sw_2console_8c">
 <area shape="rect" id="node9" href="console_8h.html" title="Header file of Console Driver." alt="" coords="272,83,349,112"/></map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="console_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a34fde330fab3434f7765445c9cc7f9a5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console_8c.html#a34fde330fab3434f7765445c9cc7f9a5">uart_init</a> (unsigned long baudRate)</td></tr>
@@ -138,6 +140,8 @@ Functions</h2></td></tr>
 <li>Use of the software either in source or binary form, must be run on or directly connected to an Analog Devices Inc. component.</li>
 </ul>
 <p>THIS SOFTWARE IS PROVIDED BY ANALOG DEVICES "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ANALOG DEVICES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, INTELLECTUAL PROPERTY RIGHTS, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+
+<p>Definition in file <a class="el" href="console_8c_source.html">console.c</a>.</p>
 </div><h2>Function Documentation</h2>
 <a class="anchor" id="a6f4cc308f9d618a96d571497b96b8cd7"></a>
 <div class="memitem">
@@ -187,6 +191,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>cmd_type - Type of the command. Example: UNKNOWN_CMD - Commands don't match. DO_CMD - Do command (!). READ_CMD - Read command (?). WRITE_CMD - Write command (=). </dd></dl>
 
+<p>Definition at line <a class="el" href="console_8c_source.html#l00314">314</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -220,6 +226,8 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+<p>Definition at line <a class="el" href="console_8c_source.html#l00288">288</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -255,6 +263,8 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status - Result of the initialization procedure. Example: -1 - if initialization was unsuccessful; 0 - if initialization was successful. </dd></dl>
 
+<p>Definition at line <a class="el" href="console_8c_source.html#l00276">276</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6c4e260c9a4cc76be56fd1d01387f433"></a>
@@ -289,6 +299,8 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+<p>Definition at line <a class="el" href="console_8c_source.html#l00153">153</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -335,6 +347,8 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the string of ASCII characters. </dd></dl>
 
+<p>Definition at line <a class="el" href="console_8c_source.html#l00114">114</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -369,6 +383,8 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status - Result of the initialization procedure. Example: 0 - if initialization was successful; -1 - if initialization was unsuccessful. </dd></dl>
 
+<p>Definition at line <a class="el" href="console_8c_source.html#l00061">61</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -397,6 +413,8 @@ Here is the caller graph for this function:</div>
 <p>Reads one character from UART. </p>
 <dl class="section return"><dt>Returns</dt><dd>received_char - Read character.</dd></dl>
 <p>Note: Blocking function - Waits until get a valid data. </p>
+
+<p>Definition at line <a class="el" href="console_8c_source.html#l00085">85</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -432,6 +450,8 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
+<p>Definition at line <a class="el" href="console_8c_source.html#l00073">73</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -466,6 +486,8 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
+<p>Definition at line <a class="el" href="console_8c_source.html#l00097">97</a> of file <a class="el" href="console_8c_source.html">console.c</a>.</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -480,7 +502,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 4 2013 12:05:00 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 4 2013 14:36:36 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
