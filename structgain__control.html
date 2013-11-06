@@ -101,8 +101,6 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><b>adc_large_overload_thre
 u16&#160;</td><td class="memItemRight" valign="bottom"><b>lmt_overload_high_thresh</b></td></tr>
 <tr class="memitem:ace60bf4f05f0de33722f390c02c1e221"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace60bf4f05f0de33722f390c02c1e221"></a>
 u16&#160;</td><td class="memItemRight" valign="bottom"><b>lmt_overload_low_thresh</b></td></tr>
-<tr class="memitem:a35094bc477ba44e016718a69a65ed253"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35094bc477ba44e016718a69a65ed253"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><b>analog_settling_time</b></td></tr>
 <tr class="memitem:a3c7200010f99f90747d0f783e8573a79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c7200010f99f90747d0f783e8573a79"></a>
 u16&#160;</td><td class="memItemRight" valign="bottom"><b>dec_pow_measuremnt_duration</b></td></tr>
 <tr class="memitem:af22ebb89fb0305c9c990c59791094728"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af22ebb89fb0305c9c990c59791094728"></a>
@@ -121,10 +119,8 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><b>mgc_inc_gain_step</b></
 u8&#160;</td><td class="memItemRight" valign="bottom"><b>mgc_dec_gain_step</b></td></tr>
 <tr class="memitem:a62b957a553a32e487f3f9c4cf09f0051"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62b957a553a32e487f3f9c4cf09f0051"></a>
 u8&#160;</td><td class="memItemRight" valign="bottom"><b>mgc_split_table_ctrl_inp_gain_mode</b></td></tr>
-<tr class="memitem:aa358962ee394283a88b861fd4def4c91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa358962ee394283a88b861fd4def4c91"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><b>agc_attack_delay_us</b></td></tr>
-<tr class="memitem:ac755ee5a1a9ad6715f760a260fa61aae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac755ee5a1a9ad6715f760a260fa61aae"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><b>agc_settling_delay</b></td></tr>
+<tr class="memitem:aef6900f80e3f2c8e5c6d4076ad20bce3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef6900f80e3f2c8e5c6d4076ad20bce3"></a>
+u8&#160;</td><td class="memItemRight" valign="bottom"><b>agc_attack_delay_extra_margin_us</b></td></tr>
 <tr class="memitem:a026396d0a5ddb1293b3bb7032dd11f55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a026396d0a5ddb1293b3bb7032dd11f55"></a>
 u8&#160;</td><td class="memItemRight" valign="bottom"><b>agc_outer_thresh_high</b></td></tr>
 <tr class="memitem:a40aaa87436f718471a1dab928d63ecd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40aaa87436f718471a1dab928d63ecd0"></a>
@@ -161,8 +157,8 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><b>dig_saturation_exceed_c
 u8&#160;</td><td class="memItemRight" valign="bottom"><b>dig_gain_step_size</b></td></tr>
 <tr class="memitem:a1f9dedee7ef2c282ccf74a4d9e865a00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f9dedee7ef2c282ccf74a4d9e865a00"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>sync_for_gain_counter_en</b></td></tr>
-<tr class="memitem:a7425f44ad90d54b0e6208f51417b9e4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7425f44ad90d54b0e6208f51417b9e4c"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><b>gain_update_counter</b></td></tr>
+<tr class="memitem:a092d0e96c0cb6d9941c702e3c5e64b8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a092d0e96c0cb6d9941c702e3c5e64b8d"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>gain_update_interval_us</b></td></tr>
 <tr class="memitem:a19607e9b7ed7f137b17cb15b2b87a448"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19607e9b7ed7f137b17cb15b2b87a448"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>immed_gain_change_if_large_adc_overload</b></td></tr>
 <tr class="memitem:acafffc422a1d8e3ef1f8bf0852940331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acafffc422a1d8e3ef1f8bf0852940331"></a>
@@ -177,7 +173,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>immed_gain_change_if_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 4 2013 14:36:36 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 6 2013 12:29:47 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

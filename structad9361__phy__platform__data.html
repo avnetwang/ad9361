@@ -112,6 +112,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>debug_mode</b></td></
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>tdd_use_fdd_tables</b></td></tr>
 <tr class="memitem:a03d44b879720b837dddb5c8f3731934a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03d44b879720b837dddb5c8f3731934a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>tdd_use_dual_synth</b></td></tr>
+<tr class="memitem:a0a9caceaabb30cbf8097d43e7f437102"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a9caceaabb30cbf8097d43e7f437102"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>tdd_skip_vco_cal</b></td></tr>
+<tr class="memitem:a4e98a9d53cdaa9413964fb8a003417db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e98a9d53cdaa9413964fb8a003417db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_ext_rx_lo</b></td></tr>
+<tr class="memitem:aeb05b951cfe62ca65939b9ce8e5ba163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb05b951cfe62ca65939b9ce8e5ba163"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_ext_tx_lo</b></td></tr>
+<tr class="memitem:a1c57076042bd3813b7ac0339c7824f01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c57076042bd3813b7ac0339c7824f01"></a>
+u8&#160;</td><td class="memItemRight" valign="bottom"><b>dc_offset_update_events</b></td></tr>
+<tr class="memitem:a04d8296011f8d7db6a573f5c6ea28164"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04d8296011f8d7db6a573f5c6ea28164"></a>
+u8&#160;</td><td class="memItemRight" valign="bottom"><b>dc_offset_attenuation_high</b></td></tr>
+<tr class="memitem:a26f384fb3fae00b12136b00a021643d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26f384fb3fae00b12136b00a021643d1"></a>
+u8&#160;</td><td class="memItemRight" valign="bottom"><b>dc_offset_attenuation_low</b></td></tr>
+<tr class="memitem:ab7db380900eb708ebdeb4ba3ab7a8309"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7db380900eb708ebdeb4ba3ab7a8309"></a>
+u8&#160;</td><td class="memItemRight" valign="bottom"><b>rf_dc_offset_count_high</b></td></tr>
+<tr class="memitem:a2c24ddb5f0fef127298885ff09a566c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c24ddb5f0fef127298885ff09a566c9"></a>
+u8&#160;</td><td class="memItemRight" valign="bottom"><b>rf_dc_offset_count_low</b></td></tr>
 <tr class="memitem:ad66416787c63f126bba3a3456a9f5d32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad66416787c63f126bba3a3456a9f5d32"></a>
 u32&#160;</td><td class="memItemRight" valign="bottom"><b>dcxo_coarse</b></td></tr>
 <tr class="memitem:a0ef137f661be02034a2f2837fc0bc8c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ef137f661be02034a2f2837fc0bc8c8"></a>
@@ -138,6 +154,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>tx_atten</b></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>update_tx_gain_via_alert</b></td></tr>
 <tr class="memitem:a37f2dd607a42ef96342db75637b94115"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f2dd607a42ef96342db75637b94115"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>gpio_resetb</b></td></tr>
+<tr class="memitem:aa327ea88ed9e18b1cdb46406b0847ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa327ea88ed9e18b1cdb46406b0847ac1"></a>
+enum ad9361_clkout&#160;</td><td class="memItemRight" valign="bottom"><b>ad9361_clkout_mode</b></td></tr>
 <tr class="memitem:a06c86066f8d0ca72542ff3c6d54ee509"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06c86066f8d0ca72542ff3c6d54ee509"></a>
 struct <a class="el" href="structgain__control.html">gain_control</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gain_ctrl</b></td></tr>
 <tr class="memitem:abebcfda3ec5d31dcd5100a0c67a3d567"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abebcfda3ec5d31dcd5100a0c67a3d567"></a>
@@ -153,14 +171,14 @@ struct <a class="el" href="structauxadc__control.html">auxadc_control</a>&#160;<
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="ad9361_8h_source.html#l02997">2997</a> of file <a class="el" href="ad9361_8h_source.html">ad9361.h</a>.</p>
+<p>Definition at line <a class="el" href="ad9361_8h_source.html#l03006">3006</a> of file <a class="el" href="ad9361_8h_source.html">ad9361.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sw/<a class="el" href="ad9361_8h_source.html">ad9361.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 4 2013 14:36:36 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 6 2013 12:29:47 for AD9361 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
