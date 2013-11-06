@@ -763,6 +763,7 @@
 #define ENSM_STATE_FDD			0xA
 #define ENSM_STATE_FDD_FLUSH		0xB
 #define ENSM_STATE_INVALID		0xFF
+#define ENSM_STATE_SLEEP		0x80
 
 /*
  *	REG_AUXDAC_2_WORD
@@ -2319,8 +2320,7 @@
  */
 #define CP_OVRG_HIGH			     (1 << 7) /* CP Ovrg High */
 #define CP_OVRG_LOW			     (1 << 6) /* CP Ovrg Low */
-#define LOCK				     (1 << 1) /* Lock */
-
+#define VCO_LOCK				(1 << 1) /* Lock */
 /*
  *	REG_RX_VCO_LDO
  */
@@ -2545,7 +2545,7 @@
  */
 #define CP_OVRG_HIGH			     (1 << 7) /* CP Ovrg High */
 #define CP_OVRG_LOW			     (1 << 6) /* CP Ovrg Low */
-#define LOCK				     (1 << 1) /* Lock */
+#define VCO_LOCK				(1 << 1) /* Lock */
 
 /*
  *	REG_TX_VCO_LDO
@@ -2870,7 +2870,6 @@ struct gain_control {
 
 	u16 lmt_overload_high_thresh; /* 16..800 mV, 0x107 */
 	u16 lmt_overload_low_thresh; /* 16..800 mV, 0x108 */
-	u8 analog_settling_time; /* 0..31, Peak overload wait time */
 	u16 dec_pow_measuremnt_duration; /* Samples, 0x15C */
 	u8 low_power_thresh; /* -64..0 dBFS, 0x114 */
 
@@ -2886,8 +2885,7 @@ struct gain_control {
 	u8 mgc_split_table_ctrl_inp_gain_mode; /* 0=AGC determine this, 1=only in LPF, 2=only in LMT */
 
 	/* AGC */
-	u8 agc_attack_delay_us; /* 0..31 us */
-	u8 agc_settling_delay;	/* 0..31, 0x111 */
+	u8 agc_attack_delay_extra_margin_us; /* 0..31 us */
 
 	u8 agc_outer_thresh_high;
 	u8 agc_outer_thresh_high_dec_steps;
@@ -2912,7 +2910,7 @@ struct gain_control {
 	u8 dig_gain_step_size; /* 1..8, 0x100 */
 	bool sync_for_gain_counter_en; /* 0x128:4 !Hybrid */
 
-	u32 gain_update_counter; /* 0..262144, 0x124, 0x125 CLKRF samples*/
+	u32 gain_update_interval_us; /* in us */
 	bool immed_gain_change_if_large_adc_overload; /* 0x123:3 */
 	bool immed_gain_change_if_large_lmt_overload; /* 0x123:7 */
 
@@ -2961,6 +2959,7 @@ struct ctrl_outs_control {
 struct elna_control {
 	u16			gain_mdB;
 	u16			bypass_loss_mdB;
+	u32			settling_delay_ns;
 	bool			elna_1_control_en; /* GPO0 */
 	bool			elna_2_control_en; /* GPO1 */
 };
@@ -2994,6 +2993,16 @@ enum ad9361_pdata_tx_freq {
 	NUM_TX_CLOCKS,
 };
 
+enum ad9361_clkout {
+	CLKOUT_DISABLE,
+	BUFFERED_XTALN_DCXO,
+	ADC_CLK_DIV_2,
+	ADC_CLK_DIV_3,
+	ADC_CLK_DIV_4,
+	ADC_CLK_DIV_8,
+	ADC_CLK_DIV_16,
+};
+
 struct ad9361_phy_platform_data {
 	bool			rx2tx2;
 	bool			fdd;
@@ -3004,6 +3013,14 @@ struct ad9361_phy_platform_data {
 	bool			debug_mode;
 	bool			tdd_use_fdd_tables;
 	bool			tdd_use_dual_synth;
+	bool			tdd_skip_vco_cal;
+	bool			use_ext_rx_lo;
+	bool			use_ext_tx_lo;
+	u8				dc_offset_update_events;
+	u8				dc_offset_attenuation_high;
+	u8				dc_offset_attenuation_low;
+	u8				rf_dc_offset_count_high;
+	u8				rf_dc_offset_count_low;
 	u32			dcxo_coarse;
 	u32			dcxo_fine;
 	u32			rf_rx_input_sel;
@@ -3017,6 +3034,7 @@ struct ad9361_phy_platform_data {
 	int			tx_atten;
 	bool			update_tx_gain_via_alert;
 	int 			gpio_resetb;
+	enum ad9361_clkout	ad9361_clkout_mode;
 
 	struct gain_control	gain_ctrl;
 	struct rssi_control	rssi_ctrl;
@@ -3029,10 +3047,14 @@ struct ad9361_phy_platform_data {
 struct rf_rx_gain {
 	u32 ant;		/* Antenna number to read gain */
 	s32 gain_db;		/* gain value in dB */
-	u32 lmt_index;	/* LNA-MIXER-TIA gain index */
-	u32 lmt_gain;		/* LNA-MIXER-TIA gain in dB */
-	u32 lpf_gain;		/* Low pass filter gain in dB */
-	u32 digital_gain;	/* Digital gain in dB */
+	u32 fgt_lmt_index;	/* Full Gain Table / LNA-MIXER-TIA gain index */
+	u32 lmt_gain;		/* LNA-MIXER-TIA gain in dB (Split GT mode only)*/
+	u32 lpf_gain;		/* Low pass filter gain in dB / index (Split GT mode only)*/
+	u32 digital_gain;	/* Digital gain in dB / index */
+	/* Debug only */
+	u32 lna_index;		/* LNA Index (Split GT mode only) */
+	u32 tia_index;		/* TIA Index (Split GT mode only) */
+	u32 mixer_index;		/* MIXER Index (Split GT mode only) */
 };
 struct rf_rssi {
 	u32 ant;		/* Antenna number for which RSSI is reported */
@@ -3103,7 +3125,6 @@ struct ad9361_rf_phy {
 	bool 			ensm_pin_ctl_en;
 
 	bool			auto_cal_en;
-	u64			last_rx_quad_cal_freq;
 	u64			last_tx_quad_cal_freq;
 	unsigned long		cal_threshold_freq;
 	u32			current_rx_bw_Hz;

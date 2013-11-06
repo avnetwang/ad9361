@@ -55,6 +55,14 @@ typedef struct
 	uint8_t		two_rx_two_tx_mode_enable;	/* adi,2rx-2tx-mode-enable */
 	uint8_t		frequency_division_duplex_mode_enable;	/* adi,frequency-division-duplex-mode-enable */
 	uint8_t		tdd_use_dual_synth_mode_enable;	/* adi,tdd-use-dual-synth-mode-enable */
+	uint8_t		tdd_skip_vco_cal_enable;		/* adi,tdd-skip-vco-cal-enable */
+	uint8_t		external_rx_lo_enable;	/* adi,external-rx-lo-enable */
+	uint8_t		external_tx_lo_enable;	/* adi,external-tx-lo-enable */
+	uint8_t		dc_offset_tracking_update_event_mask;	/* adi,dc-offset-tracking-update-event-mask */
+	uint8_t		dc_offset_attenuation_high_range;	/* adi,dc-offset-attenuation-high-range */
+	uint8_t		dc_offset_attenuation_low_range;	/* adi,dc-offset-attenuation-low-range */
+	uint8_t		dc_offset_count_high_range;			/* adi,dc-offset-count-high-range */
+	uint8_t		dc_offset_count_low_range;			/* adi,dc-offset-count-low-range */
 	uint8_t		tdd_use_fdd_vco_tables_enable;	/* adi,tdd-use-fdd-vco-tables-enable */
 	uint8_t		split_gain_table_mode_enable;	/* adi,split-gain-table-mode-enable */
 	/* ENSM Control */
@@ -77,13 +85,13 @@ typedef struct
 	/* Reference Clock Control */
 	uint8_t		xo_disable_use_ext_refclk_enable;	/* adi,xo-disable-use-ext-refclk-enable */
 	uint32_t	dcxo_coarse_and_fine_tune[2];	/* adi,dcxo-coarse-and-fine-tune */
+	uint32_t	clk_output_mode_select;		/* adi,clk-output-mode-select */
 	/* Gain Control */
 	uint8_t		gc_rx1_mode;	/* adi,gc-rx1-mode */
 	uint8_t		gc_rx2_mode;	/* adi,gc-rx2-mode */
 	uint8_t		gc_adc_large_overload_thresh;	/* adi,gc-adc-large-overload-thresh */
 	uint8_t		gc_adc_ovr_sample_size;	/* adi,gc-adc-ovr-sample-size */
 	uint8_t		gc_adc_small_overload_thresh;	/* adi,gc-adc-small-overload-thresh */
-	uint8_t		gc_analog_settling_time;	/* adi,gc-analog-settling-time */
 	uint16_t	gc_dec_pow_measurement_duration;	/* adi,gc-dec-pow-measurement-duration */
 	uint8_t		gc_dig_gain_enable;	/* adi,gc-dig-gain-enable */
 	uint16_t	gc_lmt_overload_high_thresh;	/* adi,gc-lmt-overload-high-thresh */
@@ -101,10 +109,9 @@ typedef struct
 	uint8_t		agc_adc_large_overload_inc_steps;	/* adi,agc-adc-large-overload-inc-steps */
 	uint8_t		agc_adc_lmt_small_overload_prevent_gain_inc_enable;	/* adi,agc-adc-lmt-small-overload-prevent-gain-inc-enable */
 	uint8_t		agc_adc_small_overload_exceed_counter;	/* adi,agc-adc-small-overload-exceed-counter */
-	uint8_t		agc_attack_delay_us;	/* adi,agc-attack-delay-us */
 	uint8_t		agc_dig_gain_step_size;	/* adi,agc-dig-gain-step-size */
 	uint8_t		agc_dig_saturation_exceed_counter;	/* adi,agc-dig-saturation-exceed-counter */
-	uint32_t	agc_gain_update_counter;	/* adi,agc-gain-update-counter */
+	uint32_t	agc_gain_update_interval_us; /* adi,agc-gain-update-interval-us */
 	uint8_t		agc_immed_gain_change_if_large_adc_overload_enable;	/* adi,agc-immed-gain-change-if-large-adc-overload-enable */
 	uint8_t		agc_immed_gain_change_if_large_lmt_overload_enable;	/* adi,agc-immed-gain-change-if-large-lmt-overload-enable */
 	uint8_t		agc_inner_thresh_high;	/* adi,agc-inner-thresh-high */
@@ -118,7 +125,7 @@ typedef struct
 	uint8_t		agc_outer_thresh_high_dec_steps;	/* adi,agc-outer-thresh-high-dec-steps */
 	uint8_t		agc_outer_thresh_low;	/* adi,agc-outer-thresh-low */
 	uint8_t		agc_outer_thresh_low_inc_steps;	/* adi,agc-outer-thresh-low-inc-steps */
-	uint8_t		agc_settling_delay;	/* adi,agc-settling-delay */
+	uint32_t	agc_attack_delay_extra_margin_us;	/* adi,agc-attack-delay-extra-margin-us */
 	uint8_t		agc_sync_for_gain_counter_enable;	/* adi,agc-sync-for-gain-counter-enable */
 	/* RSSI Control */
 	uint32_t	rssi_delay;	/* adi,rssi-delay */

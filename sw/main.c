@@ -70,6 +70,14 @@ AD9361_InitParam default_init_param = {
 	1,		//two_rx_two_tx_mode_enable *** adi,2rx-2tx-mode-enable
 	1,		//frequency_division_duplex_mode_enable *** adi,frequency-division-duplex-mode-enable
 	0,		//tdd_use_dual_synth_mode_enable *** adi,tdd-use-dual-synth-mode-enable
+	0,		//tdd_skip_vco_cal_enable *** adi,tdd-skip-vco-cal-enable
+	0,		//external_rx_lo_enable *** adi,external-rx-lo-enable
+	0,		//external_tx_lo_enable *** adi,external-tx-lo-enable
+	5,		//dc_offset_tracking_update_event_mask *** adi,dc-offset-tracking-update-event-mask
+	6,		//dc_offset_attenuation_high_range *** adi,dc-offset-tracking-update-event-mask
+	5,		//dc_offset_attenuation_low_range *** adi,dc-offset-tracking-update-event-mask
+	0x28,	//dc_offset_count_high_range *** adi,dc-offset-tracking-update-event-mask
+	0x32,	//dc_offset_count_low_range *** adi,dc-offset-tracking-update-event-mask
 	0,		//tdd_use_fdd_vco_tables_enable *** adi,tdd-use-fdd-vco-tables-enable
 	0,		//split_gain_table_mode_enable *** adi,split-gain-table-mode-enable
 	/* ENSM Control */
@@ -92,13 +100,13 @@ AD9361_InitParam default_init_param = {
 	/* Reference Clock Control */
 	0,		//xo_disable_use_ext_refclk_enable *** adi,xo-disable-use-ext-refclk-enable
 	{8, 5920},	//dcxo_coarse_and_fine_tune[2] *** adi,dcxo-coarse-and-fine-tune
+	0,		//clk_output_mode_select *** adi,clk-output-mode-select
 	/* Gain Control */
 	2,		//gc_rx1_mode *** adi,gc-rx1-mode
 	2,		//gc_rx2_mode *** adi,gc-rx2-mode
 	58,		//gc_adc_large_overload_thresh *** adi,gc-adc-large-overload-thresh
 	4,		//gc_adc_ovr_sample_size *** adi,gc-adc-ovr-sample-size
 	47,		//gc_adc_small_overload_thresh *** adi,gc-adc-small-overload-thresh
-	8,		//gc_analog_settling_time *** adi,gc-analog-settling-time
 	8192,	//gc_dec_pow_measurement_duration *** adi,gc-dec-pow-measurement-duration
 	0,		//gc_dig_gain_enable *** adi,gc-dig-gain-enable
 	800,	//gc_lmt_overload_high_thresh *** adi,gc-lmt-overload-high-thresh
@@ -116,10 +124,9 @@ AD9361_InitParam default_init_param = {
 	2,		//agc_adc_large_overload_inc_steps *** adi,agc-adc-large-overload-inc-steps
 	0,		//agc_adc_lmt_small_overload_prevent_gain_inc_enable *** adi,agc-adc-lmt-small-overload-prevent-gain-inc-enable
 	10,		//agc_adc_small_overload_exceed_counter *** adi,agc-adc-small-overload-exceed-counter
-	10,		//agc_attack_delay_us *** adi,agc-attack-delay-us
 	4,		//agc_dig_gain_step_size *** adi,agc-dig-gain-step-size
 	3,		//agc_dig_saturation_exceed_counter *** adi,agc-dig-saturation-exceed-counter
-	30698,	//agc_gain_update_counter *** adi,agc-gain-update-counter
+	1000,	// agc_gain_update_interval_us *** adi,agc-gain-update-interval-us
 	0,		//agc_immed_gain_change_if_large_adc_overload_enable *** adi,agc-immed-gain-change-if-large-adc-overload-enable
 	0,		//agc_immed_gain_change_if_large_lmt_overload_enable *** adi,agc-immed-gain-change-if-large-lmt-overload-enable
 	10,		//agc_inner_thresh_high *** adi,agc-inner-thresh-high
@@ -133,7 +140,7 @@ AD9361_InitParam default_init_param = {
 	2,		//agc_outer_thresh_high_dec_steps *** adi,agc-outer-thresh-high-dec-steps
 	18,		//agc_outer_thresh_low *** adi,agc-outer-thresh-low
 	2,		//agc_outer_thresh_low_inc_steps *** adi,agc-outer-thresh-low-inc-steps
-	10,		//agc_settling_delay *** adi,agc-settling-delay
+	1,		//agc_attack_delay_extra_margin_us; *** adi,agc-attack-delay-extra-margin-us
 	0,		//agc_sync_for_gain_counter_enable *** adi,agc-sync-for-gain-counter-enable
 	/* RSSI Control */
 	1,		//rssi_delay *** adi,rssi-delay
@@ -163,7 +170,7 @@ AD9361_InitParam default_init_param = {
 	0,		//tx_channel_swap_enable *** adi,tx-channel-swap-enable
 	0,		//rx_channel_swap_enable *** adi,rx-channel-swap-enable
 	1,		//rx_frame_pulse_mode_enable *** adi,rx-frame-pulse-mode-enable
-	0,		//two_t_two_r_timing_enable *** adi,2t2r-timing-enable
+	1,		//two_t_two_r_timing_enable *** adi,2t2r-timing-enable
 	0,		//invert_data_bus_enable *** adi,invert-data-bus-enable
 	0,		//invert_data_clk_enable *** adi,invert-data-clk-enable
 	0,		//fdd_alt_word_order_enable *** adi,fdd-alt-word-order-enable

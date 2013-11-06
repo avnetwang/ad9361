@@ -78,6 +78,14 @@ struct ad9361_rf_phy *ad9361_init (AD9361_InitParam *init_param)
 	phy->pdata->fdd = init_param->two_rx_two_tx_mode_enable;
 	phy->pdata->rx2tx2 = init_param->frequency_division_duplex_mode_enable;
 	phy->pdata->tdd_use_dual_synth = init_param->tdd_use_dual_synth_mode_enable;
+	phy->pdata->tdd_skip_vco_cal = init_param->tdd_skip_vco_cal_enable;
+	phy->pdata->use_ext_rx_lo = init_param->external_rx_lo_enable;
+	phy->pdata->use_ext_tx_lo = init_param->external_tx_lo_enable;
+	phy->pdata->dc_offset_update_events = init_param->dc_offset_tracking_update_event_mask;
+	phy->pdata->dc_offset_attenuation_high = init_param->dc_offset_attenuation_high_range;
+	phy->pdata->dc_offset_attenuation_low = init_param->dc_offset_attenuation_low_range;
+	phy->pdata->rf_dc_offset_count_high = init_param->dc_offset_count_high_range;
+	phy->pdata->rf_dc_offset_count_low = init_param->dc_offset_count_low_range;
 	phy->pdata->tdd_use_fdd_tables = init_param->tdd_use_fdd_vco_tables_enable;
 	phy->pdata->split_gt = init_param->split_gain_table_mode_enable;
 
@@ -111,6 +119,7 @@ struct ad9361_rf_phy *ad9361_init (AD9361_InitParam *init_param)
 	phy->pdata->use_extclk = init_param->xo_disable_use_ext_refclk_enable;
 	phy->pdata->dcxo_coarse = init_param->dcxo_coarse_and_fine_tune[0];
 	phy->pdata->dcxo_fine = init_param->dcxo_coarse_and_fine_tune[1];
+	phy->pdata->ad9361_clkout_mode = init_param->clk_output_mode_select;
 
 	/* Gain Control */
 	phy->pdata->gain_ctrl.rx1_mode = init_param->gc_rx1_mode;
@@ -118,7 +127,6 @@ struct ad9361_rf_phy *ad9361_init (AD9361_InitParam *init_param)
 	phy->pdata->gain_ctrl.adc_large_overload_thresh = init_param->gc_adc_large_overload_thresh;
 	phy->pdata->gain_ctrl.adc_ovr_sample_size = init_param->gc_adc_ovr_sample_size;
 	phy->pdata->gain_ctrl.adc_small_overload_thresh = init_param->gc_adc_small_overload_thresh;
-	phy->pdata->gain_ctrl.analog_settling_time = init_param->gc_analog_settling_time;
 	phy->pdata->gain_ctrl.dec_pow_measuremnt_duration = init_param->gc_dec_pow_measurement_duration;
 	phy->pdata->gain_ctrl.dig_gain_en = init_param->gc_dig_gain_enable;
 	phy->pdata->gain_ctrl.lmt_overload_high_thresh = init_param->gc_lmt_overload_high_thresh;
@@ -138,10 +146,9 @@ struct ad9361_rf_phy *ad9361_init (AD9361_InitParam *init_param)
 	phy->pdata->gain_ctrl.adc_large_overload_inc_steps = init_param->agc_adc_large_overload_inc_steps;
 	phy->pdata->gain_ctrl.adc_lmt_small_overload_prevent_gain_inc = init_param->agc_adc_lmt_small_overload_prevent_gain_inc_enable;
 	phy->pdata->gain_ctrl.adc_small_overload_exceed_counter = init_param->agc_adc_small_overload_exceed_counter;
-	phy->pdata->gain_ctrl.agc_attack_delay_us = init_param->agc_attack_delay_us;
 	phy->pdata->gain_ctrl.dig_gain_step_size = init_param->agc_dig_gain_step_size;
 	phy->pdata->gain_ctrl.dig_saturation_exceed_counter = init_param->agc_dig_saturation_exceed_counter;
-	phy->pdata->gain_ctrl.gain_update_counter = init_param->agc_gain_update_counter;
+	phy->pdata->gain_ctrl.gain_update_interval_us = init_param->agc_gain_update_interval_us;
 	phy->pdata->gain_ctrl.immed_gain_change_if_large_adc_overload = init_param->agc_immed_gain_change_if_large_adc_overload_enable;
 	phy->pdata->gain_ctrl.immed_gain_change_if_large_lmt_overload = init_param->agc_immed_gain_change_if_large_lmt_overload_enable;
 	phy->pdata->gain_ctrl.agc_inner_thresh_high = init_param->agc_inner_thresh_high;
@@ -155,7 +162,7 @@ struct ad9361_rf_phy *ad9361_init (AD9361_InitParam *init_param)
 	phy->pdata->gain_ctrl.agc_outer_thresh_high_dec_steps = init_param->agc_outer_thresh_high_dec_steps;
 	phy->pdata->gain_ctrl.agc_outer_thresh_low = init_param->agc_outer_thresh_low;
 	phy->pdata->gain_ctrl.agc_outer_thresh_low_inc_steps = init_param->agc_outer_thresh_low_inc_steps;
-	phy->pdata->gain_ctrl.agc_settling_delay = init_param->agc_settling_delay;
+	phy->pdata->gain_ctrl.agc_attack_delay_extra_margin_us = init_param->agc_attack_delay_extra_margin_us;	/* adi,agc-attack-delay-extra-margin-us */
 	phy->pdata->gain_ctrl.sync_for_gain_counter_en = init_param->agc_sync_for_gain_counter_enable;
 
 	/* RSSI Control */
